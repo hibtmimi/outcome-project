@@ -1,4 +1,7 @@
 /* body */
+body {
+    background-color: #232329;
+}
 
 
 /* navbar */
@@ -23,6 +26,7 @@ text-align: right;
     float: none;
     display: inline-block;
     padding-top: 20px;
+    color: white;
   
 }
 .inner_menu ul li:nth-child(1) {
@@ -47,7 +51,7 @@ text-align: right;
     text-decoration: none;
     display: block;
     padding: 20px 30px;
-    color: black;
+    color:white;
 }
 
 .inner_menu ul li a:hover {
@@ -67,17 +71,17 @@ text-align: right;
     width: 300px; 
     height: 300px;
      position: absolute;
-      left: 50%;
-       top: 4px;
-        content: "";
-         margin-left:-150px;
-          text-align: center; 
+    left: 50%;
+    top: 4px;
+   content: "";
+    margin-left:-150px;
+   text-align: center; 
 } 
  /* nav mobile */
 
  #menu {
      display: none;
- }
+ } 
 
 label {
     color: #fff;
@@ -146,10 +150,44 @@ label {
     .inner_menu ul li a:hover{ 
         background: #fe9000;
 }
+}
 
 
 /* middle */
 
-.intro-header {
-color: turquoise;
+.intro_img{
+float: left;
+padding-top: 60px;
+padding-left: 50px;
+}
+
+
+.middle_intro {
+    float: right;
+    padding-right: 300px ;
+    padding-top: 70px;
+    font-family: 'Teko', sans-serif;
+}
+
+.middle_intro h1 {
+    font-size: 60px;
+    color :#fe9000 ;
+    
+}
+.middle_intro p {
+    
+    font-size: 20px;
+    color: white;
+    margin-top: -40px;
+}
+
+.middle_intro button {
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+    font-family: 'Teko', sans-serif;
+    text-align: center;
+    background-color: #fe9000;
+    font-weight: bold;
 }
