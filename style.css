@@ -1,193 +1,235 @@
 /* body */
 body {
-    background-color: #232329;
+  background-color: #232329;
 }
-
 
 /* navbar */
 
-.inner_menu{
-    padding-left: 40px;
-    padding-right: 40px;
-    font-family: 'Teko', sans-serif;
-    font-weight: bold;
-    margin: 0 auto; 
-    width: 1170px;
+.inner_menu {
+  padding-left: 40px;
+  padding-right: 40px;
+  font-family: "Teko", sans-serif;
+  font-weight: bold;
+  margin: 0 auto;
+  width: 1170px;
 }
 
 .inner_menu ul {
-margin: 0;
-padding: 0;
-list-style: none; 
-text-align: right;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: right;
 }
 
-.inner_menu ul li  {
-    float: none;
-    display: inline-block;
-    padding-top: 20px;
-    color: white;
-  
+.inner_menu ul li {
+  float: none;
+  display: inline-block;
+  padding-top: 20px;
+  color: white;
 }
 .inner_menu ul li:nth-child(1) {
-    float: left;
-    
+  float: left;
 }
 .inner_menu ul li:nth-child(2) {
-    float: left;
-    
+  float: left;
 }
 .inner_menu ul li:nth-child(3) {
-    float: left;
-    
+  float: left;
 }
 .inner_menu ul li:nth-child(4) {
-    float: left;
-    
+  float: left;
 }
 
 .inner_menu ul li a {
-    font-size: 20px;
-    text-decoration: none;
-    display: block;
-    padding: 20px 30px;
-    color:white;
+  font-size: 20px;
+  text-decoration: none;
+  display: block;
+  padding: 20px 30px;
+  color: white;
 }
 
 .inner_menu ul li a:hover {
-   color: #ffa628;
-   /* transition: 500ms linear */
+  color: #ffa628;
+  /* transition: 500ms linear */
 }
 .inner_menu ul li a:active {
-    color: #ffa628
- }
+  color: #ffa628;
+}
 
 #main_menu {
-    width: 100%;
-    position: relative;
+  width: 100%;
+  position: relative;
 }
 
 .logo_area {
-    width: 300px; 
-    height: 300px;
-     position: absolute;
-    left: 50%;
-    top: 4px;
-   content: "";
-    margin-left:-150px;
-   text-align: center; 
-} 
- /* nav mobile */
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  top: 4px;
+  content: "";
+  margin-left: -150px;
+  text-align: center;
+}
+/* nav mobile */
 
- #menu {
-     display: none;
- } 
+#menu {
+  display: none;
+}
 
 label {
-    color: #fff;
-    font-size: 1.2em;
-    padding: 15px 0;
-    display:none;
-
+  color: #fff;
+  font-size: 1.2em;
+  padding: 15px 0;
+  display: none;
 }
 .bars {
-    display: none;
+  display: none;
 }
-@media(max-width : 960px){
-    .bars{
-        display: block;
-    }
-    .inner_menu ul li:nth-child(1)
+@media (max-width: 960px) {
+  .bars {
+    display: block;
+  }
+  .inner_menu ul li:nth-child(1)
     /* .inner_menu ul li:nth-child(2), */
-    /* .inner_menu ul li:nth-child(3) */
-     {
-        display: none;
-    }
+    /* .inner_menu ul li:nth-child(3) */ {
+    display: none;
+  }
 
-    .logo_area {
-        left: 30%;
-        top: -55px;
-    }
+  .logo_area {
+    left: 30%;
+    top: -55px;
+  }
 
-    .logo_area img{
-        width: 100px;
-        margin-left: 222px;
-        background-color: #fe9000;
-    }
+  .logo_area img {
+    width: 100px;
+    margin-left: 222px;
+    background-color: #fe9000;
+  }
 
-    .inner_menu {
+  .inner_menu {
     padding: 0;
-    }
+  }
 
-    .inner_menu ul {
+  .inner_menu ul {
     position: absolute;
-   top: 50px;
-   left: -100;
-   background: #000;
-   flex-direction:column ;
-   align-items: center;
-   justify-content: flex-start;
-   width: 100%;
-   height: 100vh;
-    }
+    top: 50px;
+    left: -100;
+    background: #000;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100vh;
+  }
 
-    .bars ~ ul{
-        left: 0;
-    }  
-    
-    .inner_menu ul li {
-        margin: 0 !important;
-        width: 100%;
+  .bars ~ ul {
+    left: 0;
+  }
 
-    }
-    .inner_menu ul li a{
-       
-        padding: 15px 0;
-        margin: 10px 0;
-        text-align: center;
-        color: white;
-    }
-    .inner_menu ul li a:hover{ 
-        background: #fe9000;
+  .inner_menu ul li {
+    margin: 0 !important;
+    width: 100%;
+  }
+  .inner_menu ul li a {
+    padding: 15px 0;
+    margin: 10px 0;
+    text-align: center;
+    color: white;
+  }
+  .inner_menu ul li a:hover {
+    background: #fe9000;
+  }
 }
-}
-
 
 /* middle */
 
-.intro_img{
-float: left;
-padding-top: 60px;
-padding-left: 50px;
+.intro_img {
+  float: left;
+  padding-top: 60px;
+  padding-left: 50px;
 }
 
-
 .middle_intro {
-    float: right;
-    padding-right: 300px ;
-    padding-top: 70px;
-    font-family: 'Teko', sans-serif;
+  float: right;
+  padding-right: 300px;
+  padding-top: 70px;
+  font-family: "Teko", sans-serif;
 }
 
 .middle_intro h1 {
-    font-size: 60px;
-    color :#fe9000 ;
-    
+  font-size: 60px;
+  color: #fe9000;
 }
 .middle_intro p {
-    
-    font-size: 20px;
-    color: white;
-    margin-top: -40px;
+  font-size: 20px;
+  color: white;
+  margin-top: -40px;
 }
 
 .middle_intro button {
-    width: 150px;
-    height: 50px;
-    font-size: 20px;
-    border-radius: 5px;
-    font-family: 'Teko', sans-serif;
-    text-align: center;
-    background-color: #fe9000;
-    font-weight: bold;
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 5px;
+  font-family: "Teko", sans-serif;
+  text-align: center;
+  background-color: #fe9000;
+  font-weight: bold;
 }
+
+/* .about  {
+    display: inline-block;
+} */
+
+.about_img {
+    float: left;
+  padding-top: 90px;
+  /* padding-right: 1000px; */
+  padding-left: 100px;
+}
+
+.about_header {
+    float: right;
+  padding-right: 260px;
+  padding-top: 100px;
+  font-family: "Teko", sans-serif;
+  
+
+}
+ .about_header h1 {
+     color: white;
+     font-size: 30px;
+ }
+
+ .about_header p {
+    color: white;
+    font-size: 25px;
+ }
+
+ /* food quality  */
+
+ .img5 {
+  float: right;
+  /* padding-left: 700px; */
+  padding-right: 450px;
+  margin-top: -170px;
+  height: 850px;
+ } 
+
+ .img6 {
+  float: right;
+  /* padding-left: 700px; */
+  padding-right: 0px;
+  margin-top: -400px;
+  height: 850px;
+  width: 2000px;
+ } 
+
+ .img7 {
+  float: right;
+  /* padding-left: 700px; */
+  padding-left: 200px;
+  margin-top: -600px;
+  height: 500px;
+ } 
