@@ -12,6 +12,11 @@ body {
   font-weight: bold;
   margin: 0 auto;
   width: 1170px;
+  overflow: hidden;
+  /* background-color:#232329; */
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  /* width: 100%; Full width */
 }
 
 .inner_menu ul {
@@ -56,7 +61,7 @@ body {
   color: #ffa628;
 }
 
-#main_menu {
+.main_menu {
   width: 100%;
   position: relative;
 }
@@ -70,6 +75,11 @@ body {
   content: "";
   margin-left: -150px;
   text-align: center;
+  overflow: hidden;
+  /* background-color:#232329; */
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  /* width: 100%; Full width */
 }
 /* nav mobile */
 
@@ -150,7 +160,7 @@ label {
   padding-left: 50px;
 }
 .intro_img:hover {
-opacity: .3;
+  opacity: 0.3;
 }
 
 .middle_intro {
@@ -164,7 +174,7 @@ opacity: .3;
   font-size: 60px;
   color: #fe9000;
 }
-.middle_intro h1:hover{
+.middle_intro h1:hover {
   font-size: 70px;
 }
 
@@ -191,94 +201,156 @@ opacity: .3;
   height: 60px;
 }
 
-
 /* .about  {
     display: inline-block;
 } */
 
 .about_img {
-    float: left;
+  float: left;
   padding-top: 90px;
   /* padding-right: 1000px; */
   padding-left: 100px;
 }
-.about_img .img_about{
-  width: 500px; 
-  height: 400px
+.about_img .img_about {
+  width: 500px;
+  height: 400px;
 }
 .about_img .img_about:hover {
-  width: 510px; 
-  height: 410px
+  width: 510px;
+  height: 410px;
 }
 
 .about_header {
-    float: right;
+  float: right;
   padding-right: 260px;
   padding-top: 100px;
   font-family: "Teko", sans-serif;
-  
-
 }
- .about_header h1 {
-     color: white;
-     font-size: 30px;
- }
+.about_header h1 {
+  color: white;
+  font-size: 30px;
+}
 
- .about_header h1:hover {
+.about_header h1:hover {
   font-size: 40px;
- }
+}
 
- .about_header p {
-    color: white;
-    font-size: 25px;
- }
+.about_header p {
+  color: white;
+  font-size: 25px;
+}
 
- /* food quality  */
+/* food quality  */
 
- .img5 {
+.img5 {
   float: right;
   /* padding-left: 700px; */
   padding-right: 2px;
   margin-top: 150px;
   height: 450px;
   border-radius: 50%;
- } 
- .img5:hover {
-   height: 460px ;
- }
- .img6 {
+}
+.img5:hover {
+  height: 460px;
+}
+.img6 {
   float: right;
   padding-left: 20px;
   padding-right: 10px;
   border-radius: 50%;
   margin-top: 300px;
   width: 400px;
-  
+
   /* margin-top: -550px; */
   /* height: 1500px;
   width: 1500px; */
- } 
+}
 
- .img6:hover {
-   width: 410px;
- }
+.img6:hover {
+  width: 410px;
+}
 
- /* .img7 {
+/* .img7 {
   float: left; */
-  /* padding-left: 700px; */
-  /* padding-right: 200px;
+/* padding-left: 700px; */
+/* padding-right: 200px;
   margin-top: -200px;
   height: 500px;
  }  */
 
+.food_intr {
+  float: left;
+  padding-right: 500px;
+  padding-left: 100px;
+  margin-top: -660px;
+  font-family: "Teko", sans-serif;
+  font-size: 25px;
+  color: white;
+}
 
- .food_intr {
-   float:left;
-   padding-right: 500px;
-   padding-left: 100px;
-   margin-top: -660px;
-   font-family: "Teko", sans-serif;
-   font-size: 25px;
-   color: white;
+/* menuo  */
 
- }
+.gallary_intro {
+  /* flex-wrap: wrap;
+  display: inline-flex; */
+  /* display: inline-flex; */
+  /* flex-wrap: wrap; */
+  text-align: center;
+  padding-top: 1800px;
+ margin-left: 45px;
+  color: white;
+  font-size: 30px;
+  font-family: "Teko", sans-serif;
+}
+
+.gallary_img{
+  /* flex-wrap: wrap;
+  display: inline-flex; */
+  margin-top: 90px;
+
+}
+.meno_img {
+width: 350px;
+height: 400px;
+padding: 20px 20px 20px 20px;
+}
+
+.meno_img:hover {
+  width: 360px;
+  height: 410px;
+}
+
+.info_img {
+  width: 100%;
+  height: 530px;
+  padding-top: 70px;
+}
+
+/* info */
+
+/* .info-section{
+  position: absolute; 
+  display: inline-block;
+  width: 3000px;
+} */
+.info_intro {
+  position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  left: 200px;
+  right: 200px;
+  top: 3090px;
+  text-align: center;
+  color: white;
+  font-size: 23px;
+  font-family: "Teko", sans-serif;
+  background-color: #232329;
+  border: 5px solid #fe9000;
+  width: 550px;
+ height: 310px;
+  
+}
+
+.info_intro p {
+  margin-top: -30px;
+}
