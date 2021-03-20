@@ -1,9 +1,14 @@
 /* body */
 body {
   background-color: #232329;
+  align-items: center;
 }
 
 /* navbar */
+/* .main_menu {
+display: flex;
+
+} */
 
 .inner_menu {
   padding-left: 40px;
@@ -12,10 +17,10 @@ body {
   font-weight: bold;
   margin: 0 auto;
   width: 1170px;
-  overflow: hidden;
+  /* overflow: hidden; */
   /* background-color:#232329; */
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
+  /* position: fixed; /* Set the navbar to fixed position */
+  /* top: 0; Position the navbar at the top of the page */ 
   /* width: 100%; Full width */
 }
 
@@ -27,7 +32,7 @@ body {
 }
 
 .inner_menu ul li {
-  float: none;
+  /* float: none; */
   display: inline-block;
   padding-top: 20px;
   color: white;
@@ -45,7 +50,6 @@ body {
   float: left;
 }
 
-
 .inner_menu ul li a {
   font-size: 20px;
   text-decoration: none;
@@ -62,10 +66,10 @@ body {
   color: #ffa628;
 }
 
-.main_menu {
+/* .main_menu {
   width: 100%;
   position: relative;
-}
+} */
 
 .logo_area {
   width: 300px;
@@ -73,76 +77,43 @@ body {
   position: absolute;
   left: 50%;
   top: 4px;
-  content: "";
-  margin-left: -150px;
-  text-align: center;
-  overflow: hidden;
-  /* background-color:#232329; */
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  /* width: 100%; Full width */
+  /* content: ""; */
 }
 /* nav mobile */
 
 #menu {
   display: none;
 }
-
  label {
-  
-  font-size: 3em;
-  padding: 15px 0;
-  display: none;
-} 
+   color: white;
+   display: none;
+   font-size: xx-large;
+   padding: 10px;
+ }
 
-@media (max-width: 960px) {
-  label {
-    display: block;
-  } 
-  .inner_menu{
-    padding: 0;
-  }
-  .inner_menu ul {
-        position: absolute;
-        top : 5px;
-        left: 0;
-        background: #dadae0;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        width: 100%;
-        height: 100vh;
-  }
-  .inner_menu ul li {
-    margin: 0 !important;
-    width: 100%;
-  }
-  .inner_menu ul li a {
-    padding: 15px 0;
-    margin: 10px 0;
-    text-align: center;
-  }
-  .inner_menu ul li a:hover {
-    background: #ffa628;
-  }
-}
+
+
 /* middle */
+.midddle {
+  display: flex;
+  flex-direction: row;
+}
 
 .intro_img {
-  float: left;
-  padding-top: 60px;
-  padding-left: 50px;
+  /* float: left; */
+  padding-top: 60px; 
+   /* padding-left: 50px;   */
 }
 .intro_img:hover {
   opacity: 0.3;
-}
+} 
 
 .middle_intro {
-  float: right;
-  padding-right: 300px;
-  padding-top: 70px;
-  font-family: "Teko", sans-serif;
-}
+  /* float: right; */
+  /* padding-right: 300px; */
+   padding-top: 70px;
+   font-family: "Teko", sans-serif;
+} 
 
 .middle_intro h1 {
   font-size: 60px;
@@ -171,21 +142,20 @@ body {
 }
 
 .middle_intro button:hover {
-  width: 160px;
+  width: 100px;
   height: 60px;
+} 
+
+.about  {
+    display: flex;
+    flex-direction: row;
 }
 
-
-
-/* .about  {
-    display: inline-block;
-} */
-
 .about_img {
-  float: left;
-  padding-top: 90px;
-  /* padding-right: 1000px; */
-  padding-left: 100px;
+  /* float: left; */
+  padding-top: 50px;
+  padding-right: 100px;
+  /* padding-left: 100px; */
 }
 .about_img .img_about {
   width: 500px;
@@ -197,9 +167,9 @@ body {
 }
 
 .about_header {
-  float: right;
-  padding-right: 260px;
-  padding-top: 100px;
+  /* float: right; */
+  /* padding-right: 260px; */
+  padding-top: 20px;
   font-family: "Teko", sans-serif;
 }
 .about_header h1 {
@@ -272,7 +242,7 @@ body {
   /* display: inline-flex; */
   /* flex-wrap: wrap; */
   text-align: center;
-  padding-top: 1800px;
+  padding-top: 750px;
   margin-left: 45px;
   color: white;
   font-size: 30px;
@@ -283,6 +253,7 @@ body {
   /* flex-wrap: wrap;
   display: inline-flex; */
   margin-top: 90px;
+  align-items: center;
 }
 .meno_img {
   width: 330px;
@@ -316,7 +287,7 @@ body {
   margin: 0 auto;
   left: 200px;
   right: 200px;
-  top: 3050px;
+  top: 3090px;
   text-align: center;
   color: white;
   font-size: 23px;
@@ -363,22 +334,24 @@ body {
   height: 276px;
 }
 .meno-desc {
-  display: inline;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .meno_img_first {
   font-family: "Teko", sans-serif;
-  margin-left: 50px;
+  /* margin-left: 50px; */
 }
 .meno_img_first h1 {
   color: #fe9000;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   font-size: 40px;
-}
+} 
 
 .meno_img_first p {
   color: white;
-  margin-top: -20px;
+  /* margin-top: -20px; */
 }
 
 .meno_img_first h4 {
@@ -388,8 +361,8 @@ body {
 
 .meno_img_secound {
   font-family: "Teko", sans-serif;
-  margin-left: 400px;
-  margin-top: -165px;
+  /* margin-left: 400px;
+  margin-top: -165px; */
 }
 
 .meno_img_secound h1 {
@@ -398,17 +371,17 @@ body {
 }
 .meno_img_secound p {
   color: white;
-  margin-top: -10px;
+  /* margin-top: -10px; */
 }
 .meno_img_secound h4 {
-  color: #fe9000;
-  margin-top: -10px;
+   color: #fe9000;
+  /* margin-top: -10px;  */
 }
 
 .meno_img_thired {
   font-family: "Teko", sans-serif;
-  margin-left: 750px;
-  margin-top: -170px;
+  /* margin-left: 750px;
+  margin-top: -170px; */
 }
 
 .meno_img_thired h1 {
@@ -417,21 +390,26 @@ body {
 }
 .meno_img_thired p {
   color: white;
-  margin-top: -10px;
+  /* margin-top: -10px; */
 }
 .meno_img_thired h4 {
   color: #fe9000;
-  margin-top: -10px;
+  /* margin-top: -10px; */
 }
-
-.enjoy_intro{
+ .enjou {
+   width: 100%;
+   height :150px
+ }
+.enjoy_intro {
   margin-top: -340px;
   color: white;
   font-family: "Teko", sans-serif;
   font-size: 20px;
   text-align: center;
 }
-
+.enjoy {
+margin-top: 40px;
+}
 .footer_intro {
   color: white;
   text-align: center;
@@ -439,9 +417,7 @@ body {
   font-family: "Teko", sans-serif;
 }
 
-
 .footer_list ul {
-
   list-style: none;
   text-align: center;
 }
@@ -452,25 +428,149 @@ body {
   /* padding-top: 5px; */
   color: white;
 }
-  .footer_list ul li a {
-    font-size: 30px;
-    text-decoration: none;
+.footer_list ul li a {
+  font-size: 30px;
+  text-decoration: none;
+  display: block;
+  padding: 20px 30px 20px 20px;
+  color: white;
+  font-family: "Teko", sans-serif;
+}
+
+.footer_social ul {
+  list-style: none;
+  text-align: center;
+}
+
+.footer_social ul i {
+  float: none;
+  display: inline-block;
+  color: white;
+  padding: 10px;
+}
+/* .enjou {
+  width: 100%;
+} */
+
+
+@media (max-width: 960px) {
+  label {
     display: block;
-    padding: 20px 30px 20px 20px;
-   color: white;
-    font-family: "Teko", sans-serif;
+    padding-top: 40px;
   }
-
-  .footer_social ul{
-    list-style: none;
+  .inner_menu {
+    /* display: none; */
+    padding: 0;
+  }
+  .inner_menu ul {
+    position: absolute;
+    top: 10px;
+    left: -100%;
+    background: #232329;;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 60vh;
+  }
+  #menu:checked ~  .inner_menu ul {
+    position: absolute;
+    top: 100px;
+    left: 0px;
+  }
+  .inner_menu ul li {
+    margin: 0 !important;
+    width: 100%;
+  }
+  .inner_menu ul li a {
+    padding: 5px 0;
+    margin: 2px 0;
     text-align: center;
+   
   }
-
-  .footer_social ul i {
-    float: none;
-    display: inline-block;
-    color: white;
-    padding: 10px;
-
+  .inner_menu ul li a:hover {
+    background: white;
   }
- 
+  .logo_area  {
+   left: 195px;
+   top:0px;
+  }
+  /* .midddle {
+    flex-direction: column-reverse;
+  } */
+  .intro_img .img{
+   width: 400px;
+  }
+  .info_img {
+    display: none;
+    }
+    .info_intro {
+   display: none;
+    }
+}
+@media (max-width: 600px) {
+
+  .logo_area  {
+   left: 170px;
+   top:0px;
+  }
+  .midddle {
+    flex-direction: column-reverse;
+  }
+  /* .intro_img {
+    display: none;
+  } */
+  .intro_img {
+    display: none;
+  }
+  .about  {
+    flex-direction: column;
+}
+.food_img .img5{
+  display: none;
+  margin-top: 50px;
+}
+.food_img .img6{
+  /* display: none; */
+  float: none;
+  margin-top: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.food_intr{
+  margin-top: 60px;
+  padding-right: 50px;
+  padding-left: 10px;
+}
+.gallary_intro {
+  /* flex-wrap: wrap;
+  display: inline-flex; */
+  padding-top: 110px;
+}
+.info_intro {
+  left: 40px;
+  right: 5px;
+  top: 5300px;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  width: 300px;
+  height: 250px;
+}
+.info_img {
+display: none;
+}
+.meno-desc {
+  flex-direction: column;
+}
+.enjou {
+ width: 150%;
+}
+.enjoy_intro {
+  margin-top: 50px;
+  text-align: center;
+}
+.enjoys {
+ display: none;
+}
+}
